@@ -11,7 +11,7 @@ S = Sequential([LSTM(LSTM_input,3), Dense(1,1)])
 
 #data preprocessing
 data = pd.read_csv('./data/ETH-USD-Test.csv')
-attribute = 'Open'
+attribute = 'High'
 input_data = data[attribute][:timestep * LSTM_input]
 print('Atribut input : '+attribute)
 print('Input : (5 teratas)')
